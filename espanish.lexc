@@ -1,0 +1,57 @@
+Multichar_Symbols
++V +Inf +1p +2p +3p +Masc +Fem +Sing +Plur
+
+! Lexicon with root stems:
+LEXICON Root
+ am V ;
+ cant V ;
+ habl V ;
+ cambi V ;
+ llam V ;
+ tir V ;
+ bail V ;
+ baj V ;
+ camin V ;
+ escuch V ;
+ perr N ;
+ gat N ;
+ cerd N ;
+ ingenier N ;
+ mecánic N ;
+ os N ;
+ lob N ;
+ médic N ;
+ maestr N ;
+ abogad N ;
+
+! Lexicon containing verb POS tags:
+LEXICON V
++V: V-suff ;
+
+! LEXICON containing noun POS tags:
+LEXICON N
++N: N-suff ;
+
+! Lexicon containing conjugational suffixes and tags for verbs:
+LEXICON V-suff
++Inf:ar # ;
++1p+Sing:o  # ;
++1p+Plur:amos   # ;
++2p+Sing:as # ;
++2p+Plur:áis    # ;
++3p+Sing:a  # ;
++3p+Plur:an # ;
+
+! Lexicon containing inflectional suffixes and  tags for nouns:
+LEXICON N-suff
++Masc+Sing:o    # ;
++Masc+Plur:os   # ;
++Fem+Sing:a # ;
++Fem+Plur:as    # ;
+
+! The format for verbs is root+V+person+number. They are all -ar verbs in present tense indicative.
+! The format for nouns is root+N+gender+number
+! Verb roots include cant-, am-, habl-, cambi- and tir-
+! Noun roots include perr-, gat-, ingenier-, cerd-, and mecánic-
+! Example verb: cant+V+2p+Sing = cantas
+! Example noun: cerd+N+Fem+Plur = cerdas
